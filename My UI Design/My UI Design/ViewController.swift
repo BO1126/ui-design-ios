@@ -11,12 +11,13 @@ import Hero
 class ViewController: UIViewController{
     
     @IBOutlet weak var firstView : UIView!
-    
+    @IBOutlet weak var secondView : UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstView.hero.id = "main"
+        firstView.hero.id = "top"
+        secondView.hero.id = "main"
     }
     
     

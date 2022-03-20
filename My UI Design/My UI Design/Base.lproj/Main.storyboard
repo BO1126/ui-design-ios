@@ -11,18 +11,24 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="BYZ-38-t0r" customClass="ViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QeK-6v-tQy">
-                                <rect key="frame" x="75" y="117" width="240" height="128"/>
+                                <rect key="frame" x="75" y="205" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vD-ld-8iA">
+                                <rect key="frame" x="75" y="356" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="wi2-D9-R64" appends="YES" id="OsU-zh-ov0"/>
+                                    <outletCollection property="gestureRecognizers" destination="0oY-Bk-Ojp" appends="YES" id="WZC-fV-VKf"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -31,50 +37,169 @@
                     </view>
                     <connections>
                         <outlet property="firstView" destination="QeK-6v-tQy" id="Sjb-CO-G82"/>
+                        <outlet property="secondView" destination="7vD-ld-8iA" id="cWa-Kg-NSi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="wi2-D9-R64">
+                <tapGestureRecognizer id="0oY-Bk-Ojp">
                     <connections>
-                        <action selector="tapView:" destination="BYZ-38-t0r" id="hu8-9C-I3r"/>
+                        <action selector="tapView:" destination="BYZ-38-t0r" id="v2B-gq-TIe"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="18.46153846153846" y="67.535545023696685"/>
         </scene>
-        <!--Sub View Controller-->
+        <!--View Controller-->
+        <scene sceneID="diu-rF-qe6">
+            <objects>
+                <viewController id="pYa-gI-aZ4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnR-AQ-bl0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-Wa-egB">
+                                <rect key="frame" x="95" y="322" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="NjI-Nt-fOW"/>
+                                    <constraint firstAttribute="width" constant="200" id="kz5-1S-FUr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="74r-Jr-vkb"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NTb-Wa-egB" firstAttribute="centerY" secondItem="wnR-AQ-bl0" secondAttribute="centerY" id="G6n-vT-4PQ"/>
+                            <constraint firstItem="NTb-Wa-egB" firstAttribute="centerX" secondItem="wnR-AQ-bl0" secondAttribute="centerX" id="TMG-8h-5EC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVC-jR-uoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="810"/>
+        </scene>
+        <!--Second View Controller-->
         <scene sceneID="N1g-Cr-Nes">
             <objects>
-                <viewController storyboardIdentifier="VC2" id="rCq-aW-d7T" customClass="SubViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="rCq-aW-d7T" customClass="SecondViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZTu-Bh-c9Y">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-kt-N8n">
-                                <rect key="frame" x="75" y="583" width="240" height="128"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xw5-3Y-BPL">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="xZA-k3-oTP" appends="YES" id="cNa-3j-R0h"/>
-                                </connections>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAg-kt-N8n">
+                                        <rect key="frame" x="75" y="83" width="240" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xZA-k3-oTP" appends="YES" id="cNa-3j-R0h"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pso-dM-FoL">
+                                        <rect key="frame" x="75" y="250" width="240" height="594"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zsw-OS-ylr"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hvw-kQ-lqD"/>
                     <connections>
-                        <outlet property="mainView" destination="hAg-kt-N8n" id="51z-m3-ADc"/>
+                        <outlet property="backView" destination="xw5-3Y-BPL" id="uGe-6y-Dv3"/>
+                        <outlet property="mainView" destination="hAg-kt-N8n" id="SOX-M5-qUc"/>
+                        <outlet property="whiteView" destination="pso-dM-FoL" id="bvX-0K-D52"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzE-eE-2Qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="xZA-k3-oTP">
                     <connections>
-                        <action selector="ht_dismiss:" destination="rCq-aW-d7T" id="Wth-R6-e3N"/>
+                        <action selector="tapView" destination="rCq-aW-d7T" id="7Su-fy-SC4"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="816.92307692307691" y="67.535545023696685"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="HZt-Ym-p9q">
+            <objects>
+                <viewController storyboardIdentifier="VC3" id="2un-EJ-72Y" customClass="ThirdViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8FC-FF-VGd">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IER-gj-GP8">
+                                <rect key="frame" x="105" y="105" width="181" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gq6-Ga-Ykn" appends="YES" id="1Od-2J-R0H"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-zg-apV">
+                                <rect key="frame" x="75" y="387" width="240" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gf8-19-c3J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="IER-gj-GP8" id="k4i-u7-KTH"/>
+                        <outlet property="whiteView" destination="2gj-zg-apV" id="g2t-YD-bkB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ene-BX-Bzc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gq6-Ga-Ykn">
+                    <connections>
+                        <action selector="tapView" destination="2un-EJ-72Y" id="toI-Rb-ZlD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1670.7692307692307" y="61.848341232227483"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="k8L-rI-ya8">
+            <objects>
+                <viewController storyboardIdentifier="VC4" id="POO-nZ-bVH" customClass="FourthViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="773-oP-7Rq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYB-q7-S0G">
+                                <rect key="frame" x="135" y="105" width="120" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="665-0l-3Co" appends="YES" id="M8N-51-3Lb"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rQp-ll-tpI"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="pYB-q7-S0G" id="M0K-3a-ylO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qA4-Al-Okf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="665-0l-3Co">
+                    <connections>
+                        <action selector="tapView" destination="POO-nZ-bVH" id="9hc-Pm-Pgc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2518" y="62"/>
         </scene>
     </scenes>
     <resources>
