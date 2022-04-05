@@ -1,16 +1,24 @@
 PODS:
   - Hero (1.6.1)
+  - lottie-ios (3.3.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Hero
+  - lottie-ios
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
     - Hero
+    - lottie-ios
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 92a9187c03a76b4c09adc72fc8a87c87ada89883
+PODFILE CHECKSUM: a8960f49cc77f167c705a0fb3d93856e8b71d2f5
 
 COCOAPODS: 1.11.2

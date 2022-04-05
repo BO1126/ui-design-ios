@@ -19,7 +19,7 @@ class SecondViewController: UIViewController {
         self.hero.isEnabled = true
         whiteView.hero.modifiers = [.translate(y:1000)]
         mainView.hero.id = "top"
-        backView.hero.id = "main"
+//        backView.hero.id = "main"
         // Do any additional setup after loading the view.
     }
     

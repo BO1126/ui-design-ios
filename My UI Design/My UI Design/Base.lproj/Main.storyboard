@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4bZ-Jd-lOl">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="18.46153846153846" y="67.535545023696685"/>
         </scene>
-        <!--View Controller-->
+        <!--Black View Controller-->
         <scene sceneID="diu-rF-qe6">
             <objects>
-                <viewController id="pYa-gI-aZ4" sceneMemberID="viewController">
+                <viewController id="pYa-gI-aZ4" customClass="BlackViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wnR-AQ-bl0">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,10 +73,111 @@
                             <constraint firstItem="NTb-Wa-egB" firstAttribute="centerX" secondItem="wnR-AQ-bl0" secondAttribute="centerX" id="TMG-8h-5EC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blackView" destination="NTb-Wa-egB" id="B94-xX-qFc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVC-jR-uoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18" y="810"/>
+        </scene>
+        <!--Toast View Controller-->
+        <scene sceneID="KZg-g0-OiH">
+            <objects>
+                <viewController id="b7K-x2-Gk3" customClass="ToastViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fib-Tu-nGo">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvD-gI-XEZ">
+                                <rect key="frame" x="174.66666666666666" y="74" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Toast"/>
+                                <connections>
+                                    <action selector="touchFirstToastButton" destination="b7K-x2-Gk3" eventType="touchUpInside" id="JwT-DS-dLS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ab-ic-tdR">
+                                <rect key="frame" x="174.66666666666666" y="134" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Toast"/>
+                                <connections>
+                                    <action selector="touchSecondToastButton" destination="b7K-x2-Gk3" eventType="touchUpInside" id="mKt-zv-hWC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-7C-1aL">
+                                <rect key="frame" x="174.66666666666666" y="194" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Toast"/>
+                                <connections>
+                                    <action selector="touchThirdToastButton" destination="b7K-x2-Gk3" eventType="touchUpInside" id="qmu-6q-c8K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaV-d0-ZcR">
+                                <rect key="frame" x="174.66666666666666" y="254" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Toast"/>
+                                <connections>
+                                    <action selector="touchForthToastButton" destination="b7K-x2-Gk3" eventType="touchUpInside" id="vS4-xO-Ao3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQB-Rl-auR">
+                                <rect key="frame" x="174.66666666666666" y="314" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Toast"/>
+                                <connections>
+                                    <action selector="touchFifthToastButton" destination="b7K-x2-Gk3" eventType="touchUpInside" id="u1g-tY-Kvr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HPz-hN-aCy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GQB-Rl-auR" firstAttribute="centerX" secondItem="fib-Tu-nGo" secondAttribute="centerX" id="43Q-Yv-Acy"/>
+                            <constraint firstItem="SaV-d0-ZcR" firstAttribute="top" secondItem="JJ1-7C-1aL" secondAttribute="bottom" constant="30" id="5Pt-3f-mwY"/>
+                            <constraint firstItem="7Ab-ic-tdR" firstAttribute="centerX" secondItem="fib-Tu-nGo" secondAttribute="centerX" id="Hev-sC-zSL"/>
+                            <constraint firstItem="SaV-d0-ZcR" firstAttribute="centerX" secondItem="fib-Tu-nGo" secondAttribute="centerX" id="KDc-2T-EiY"/>
+                            <constraint firstItem="NvD-gI-XEZ" firstAttribute="top" secondItem="HPz-hN-aCy" secondAttribute="top" constant="30" id="ROd-UE-RyK"/>
+                            <constraint firstItem="7Ab-ic-tdR" firstAttribute="top" secondItem="NvD-gI-XEZ" secondAttribute="bottom" constant="30" id="Vv9-1A-Hn7"/>
+                            <constraint firstItem="JJ1-7C-1aL" firstAttribute="top" secondItem="7Ab-ic-tdR" secondAttribute="bottom" constant="30" id="aJG-UE-gAF"/>
+                            <constraint firstItem="JJ1-7C-1aL" firstAttribute="centerX" secondItem="fib-Tu-nGo" secondAttribute="centerX" id="cUw-Xm-kOe"/>
+                            <constraint firstItem="GQB-Rl-auR" firstAttribute="top" secondItem="SaV-d0-ZcR" secondAttribute="bottom" constant="30" id="dFc-MH-m0Z"/>
+                            <constraint firstItem="NvD-gI-XEZ" firstAttribute="centerX" secondItem="fib-Tu-nGo" secondAttribute="centerX" id="rCs-ee-9Tr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsx-6c-hea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="1494"/>
+        </scene>
+        <!--Seasons View Controller-->
+        <scene sceneID="4no-6e-KtM">
+            <objects>
+                <viewController id="4bZ-Jd-lOl" customClass="SeasonsViewController" customModule="My_UI_Design" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vP2-xt-4Rz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3Oj-ky-cnK"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hfu-T3-ZDS" appends="YES" id="uYF-fM-9Ic"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2td-Xg-Wxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hfu-T3-ZDS">
+                    <connections>
+                        <action selector="changeViewSeason" destination="4bZ-Jd-lOl" id="41H-eF-TQR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="41" y="2193"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="N1g-Cr-Nes">
@@ -118,12 +219,12 @@
                         <outlet property="whiteView" destination="pso-dM-FoL" id="bvX-0K-D52"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RzE-eE-2Qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="xZA-k3-oTP">
                     <connections>
                         <action selector="tapView" destination="rCq-aW-d7T" id="7Su-fy-SC4"/>
                     </connections>
                 </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzE-eE-2Qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="816.92307692307691" y="67.535545023696685"/>
         </scene>
@@ -192,12 +293,12 @@
                         <outlet property="mainView" destination="pYB-q7-S0G" id="M0K-3a-ylO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qA4-Al-Okf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="665-0l-3Co">
                     <connections>
                         <action selector="tapView" destination="POO-nZ-bVH" id="9hc-Pm-Pgc"/>
                     </connections>
                 </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qA4-Al-Okf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2518" y="62"/>
         </scene>

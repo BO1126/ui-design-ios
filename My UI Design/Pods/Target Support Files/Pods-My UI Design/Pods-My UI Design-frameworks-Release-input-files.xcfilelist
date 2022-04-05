@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-My UI Design/Pods-My UI Design-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Hero/Hero.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
