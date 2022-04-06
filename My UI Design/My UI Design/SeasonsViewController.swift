@@ -99,7 +99,7 @@ class SeasonsViewController: UIViewController {
     
     func addSeasonView(rectView : UIView, seasonView : AnimationView){
         seasonView.frame = CGRect(x: 0, y: 0, width: rectView.frame.width, height: rectView.frame.height)
-        seasonView.backgroundColor = .black
+        seasonView.backgroundColor = .systemCyan
         rectView.addSubview(seasonView)
         seasonView.play()
         seasonView.loopMode = .loop
