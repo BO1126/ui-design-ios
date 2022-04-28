@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		428D1E6F281AA7830089A2BB /* GradientAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D1E6E281AA7830089A2BB /* GradientAnimationViewController.swift */; };
 		42AD80EC27FC5310007937AE /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD80EB27FC5310007937AE /* SeasonsViewController.swift */; };
 		42B75DC027EDCE6900AD5693 /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B75DBF27EDCE6900AD5693 /* ToastViewController.swift */; };
 		42B9A7B927D89826005416A8 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B9A7B827D89826005416A8 /* SubViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		428D1E6E281AA7830089A2BB /* GradientAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimationViewController.swift; sourceTree = "<group>"; };
 		42AD80EB27FC5310007937AE /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
 		42B75DBF27EDCE6900AD5693 /* ToastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
 		42B9A7B827D89826005416A8 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				42C6DFCE27E5A8500016A233 /* SecondViewController.swift */,
 				42B75DBF27EDCE6900AD5693 /* ToastViewController.swift */,
 				42AD80EB27FC5310007937AE /* SeasonsViewController.swift */,
+				428D1E6E281AA7830089A2BB /* GradientAnimationViewController.swift */,
 			);
 			path = "My UI Design";
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				42E1E22B27E4BE4F00CA6264 /* FourthViewController.swift in Sources */,
 				42E1E22927E4BD3500CA6264 /* ThirdViewController.swift in Sources */,
 				42EA4DDC27C3F45100CB51A6 /* SceneDelegate.swift in Sources */,
+				428D1E6F281AA7830089A2BB /* GradientAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,7 @@ class BlackViewController: UIViewController {
     func addRotationView(beginTime : Double, color : CGColor){
         let rotation : CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
         rotation.toValue = NSNumber(value: Double.pi * 2)
-        rotation.duration = 1.8
+        rotation.duration = 7.2
         rotation.isCumulative = true
         rotation.repeatCount = Float.greatestFiniteMagnitude
         rotation.beginTime = CACurrentMediaTime() + beginTime*20/10
@@ -65,16 +65,16 @@ class smileView : UIView{
         let path2 = UIBezierPath()
         path2.move(to: CGPoint(x: rect.midX-50, y: rect.midY+20))
         path2.addCurve(to: CGPoint(x: rect.midX+50, y: rect.midY+20), controlPoint1: CGPoint(x: rect.midX-30, y: rect.midY+50+20), controlPoint2: CGPoint(x: rect.midX+30, y: rect.midY+50+20))
-        UIColor.systemYellow.setStroke()
+        UIColor.white.setStroke()
         path2.lineWidth = 3
         path2.stroke()
         
         let path3 = UIBezierPath(ovalIn: CGRect(x: rect.midX-50, y: rect.midY-50, width: 30, height: 30))
-        UIColor.systemYellow.setFill()
+        UIColor.white.setFill()
         path3.fill()
         
         let path4 = UIBezierPath(ovalIn: CGRect(x: rect.midX+20, y: rect.midY-50, width: 30, height: 30))
-        UIColor.systemYellow.setFill()
+        UIColor.white.setFill()
         path4.fill()
         
     }
